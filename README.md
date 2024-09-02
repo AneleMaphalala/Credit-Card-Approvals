@@ -1,7 +1,7 @@
 # **Credit-Card-Approvals**
 
 ## Introduction
-Credit Card Approvals is the process by which a bank or financial institution evaluates a person's credit-worthiness to decide whether or not to approve their application for a credit card 
+A credit card is a financial tool issued by banks or financial institutions that allows the cardholder to borrow funds to make purchases, pay for services, or withdraw cash up to a certain credit limit. Credit Card Approvals is the process by which a bank or financial institution evaluates a person's credit-worthiness to decide whether or not to approve their application for a credit card.
 
 ## Data Description
 The dataset comprises two main files, `Credit_card.csv` and `Credit_card_label.csv`, which together provide detailed information about credit card applicants and the outcomes of their applications. This dataset provides a comprehensive overview of the applicant's demographic, financial, and employment information, which can be used to analyze factors affecting credit card approval decisions. Below is a description of each feature in the datasets:
