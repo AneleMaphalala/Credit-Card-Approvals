@@ -1,13 +1,34 @@
-# **Credit-Card-Fraud-Detection**
+# **Credit-Card-Approvals**
 
 ## Introduction
-Credit Card Fraud Detection involves identifying and preventing unauthorized or suspicious transactions on credit card accounts. 
+Credit Card Approvals is the process by which a bank or financial institution evaluates a person's credit-worthiness to decide whether or not to approve their application for a credit card 
 
 ## Data Description
-This dataset includes transactions over two days, with 492 fraud cases out of a total of 284,807 transactions. The data is highly imbalanced, with fraudulent transactions making up only 0.172% of the total.
+The dataset comprises two main files, `Credit_card.csv` and `Credit_card_label.csv`, which together provide detailed information about credit card applicants and the outcomes of their applications. This dataset provides a comprehensive overview of the applicant's demographic, financial, and employment information, which can be used to analyze factors affecting credit card approval decisions. Below is a description of each feature in the datasets:
 
-The dataset features only numerical inputs derived from PCA (Principal Component Analysis) transformations. Due to confidentiality, the original features and detailed background information cannot be provided. Features V1 through V28 are the PCA-derived principal components, while 'Time' and 'Amount' are the only features not transformed by PCA. 'Time' represents the number of seconds elapsed since the first transaction in the dataset, and 'Amount' is the transaction amount, which can be used for cost-sensitive learning depending on the example. The 'Class' feature indicates whether a transaction is fraudulent (1) or not (0).
+1. **`Credit_card.csv`**
+- `Ind_ID`: Unique identifier for each client.
+- `Gender`: Gender of the applicant (e.g., Male, Female).
+- `Car_owner`: Indicates whether the applicant owns a car (Yes/No).
+- `Propert_owner`: Indicates whether the applicant owns property (Yes/No).
+- `Children`: The number of children the applicant has.
+- `Annual_income`: The annual income of the applicant.
+- `Type_Income`: Type of income the applicant receives (e.g., Salary, Pension, Business).
+- `Education`: The highest level of education attained by the applicant (e.g., High School, Bachelor’s, Master’s).
+- `Marital_status`: The marital status of the applicant (e.g., Single, Married, Divorced).
+- `Housing_type`: The applicant’s living situation (e.g., Renting, Homeowner, Living with parents).
+- `Birthday_count`: The applicant's age represented as the backward count of days from the current day (0 means today, -1 means yesterday, etc.).
+- `Employed_days`: The number of days since the applicant started their current employment, represented as a backward count from the current day (0 means today, positive values indicate the applicant is currently unemployed).
+- `Mobile_phone`: Indicates whether the applicant has a mobile phone (Yes/No).
+- `Work_phone`: Indicates whether the applicant has a work phone (Yes/No).
+- `Phone`: Indicates whether the applicant has any phone number (Yes/No).
+- `EMAIL_ID`: Indicates whether the applicant has an email address (Yes/No).
+- `Type_Occupation`: The occupation type of the applicant (e.g., Manager, Sales, Laborer).
+- `Family_Members`: The size of the applicant's family, including themselves.
 
+2. **`Credit_card_label.csv`**
+- `ID`: The unique identifier (Ind_ID) used to join with the application data in the Credit_Card.csv file.
+- `Label`: The outcome of the credit card application, where 0 indicates the application was approved, and 1 indicates it was rejected.
 
 ## Project Journey
 The journey, outlined in the comprehensive table of contents, covered various stages:
